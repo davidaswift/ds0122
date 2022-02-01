@@ -21,5 +21,11 @@ GET http://localhost:8080/rental-charges/{id}
 Submit a checkout:
 POST http://localhost:8080/checkout
 Request body:
+  {
+    "toolCode": [tool code],
+    "rentalDays: [number of rental days],
+    "discountPercent": [discount percent 0 -100],
+    "checkoutDate": [yyyy-mm-dd]
+  }
 
 Unit test are included with the primary test suite Ds0122ApplicationTests executing tests 1 - 6
